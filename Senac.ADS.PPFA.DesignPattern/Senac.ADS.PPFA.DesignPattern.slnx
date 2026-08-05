@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Senac.ADS.PPFA.DesignPattern.Builder/Senac.ADS.PPFA.DesignPattern.Builder.csproj" />
+  <Project Path="Senac.ADS.PPFA.DesignPattern.WinForms/Senac.ADS.PPFA.DesignPattern.WinForms.csproj" />
+</Solution>

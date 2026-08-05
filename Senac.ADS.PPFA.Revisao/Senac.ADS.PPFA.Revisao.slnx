@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Senac.ADS.PPFA.Revisao.BancoDados/Senac.ADS.PPFA.Revisao.BancoDados.csproj" Id="576698bc-6d4d-42b8-9984-dcd759d639a3" />
+  <Project Path="Senac.ADS.PPFA.Revisao.Negocio/Senac.ADS.PPFA.Revisao.Negocio.csproj" Id="603959b4-ff63-46da-a567-5ef82508df5f" />
+  <Project Path="Senac.ADS.PPFA.Revisao.WinForms/Senac.ADS.PPFA.Revisao.WinForms.csproj" Id="5efcadd6-be95-4573-a3be-6f15e2776479" />
+</Solution>
