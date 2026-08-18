@@ -10,6 +10,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Senac.ADS.PPFA.DesignPattern.Builder\Senac.ADS.PPFA.DesignPattern.Builder.csproj" />
+    <ProjectReference Include="..\Senac.ADS.PPFA.DesignPattern.Factory\Senac.ADS.PPFA.DesignPattern.Factory.csproj" />
+    <ProjectReference Include="..\Senac.ADS.PPFA.DesignPattern.Singleton\Senac.ADS.PPFA.DesignPattern.Singleton.csproj" />
   </ItemGroup>
 
 </Project>

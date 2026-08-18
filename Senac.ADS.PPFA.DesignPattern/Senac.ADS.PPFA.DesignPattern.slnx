@@ -1,4 +1,6 @@
 <Solution>
   <Project Path="Senac.ADS.PPFA.DesignPattern.Builder/Senac.ADS.PPFA.DesignPattern.Builder.csproj" />
+  <Project Path="Senac.ADS.PPFA.DesignPattern.Factory/Senac.ADS.PPFA.DesignPattern.Factory.csproj" Id="102294d7-53b9-4dc6-aa93-d3da9e649849" />
+  <Project Path="Senac.ADS.PPFA.DesignPattern.Singleton/Senac.ADS.PPFA.DesignPattern.Singleton.csproj" Id="a96e5591-847f-4162-8ac7-72fb5cf1740f" />
   <Project Path="Senac.ADS.PPFA.DesignPattern.WinForms/Senac.ADS.PPFA.DesignPattern.WinForms.csproj" />
 </Solution>
