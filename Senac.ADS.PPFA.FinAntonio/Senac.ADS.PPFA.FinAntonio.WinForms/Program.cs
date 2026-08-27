@@ -1,4 +1,4 @@
-namespace Senac.ADS.PPFA.Revisao.WinForms
+namespace Senac.ADS.PPFA.FinAntonio.WinForms
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Senac.ADS.PPFA.Revisao.WinForms
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new frmPessoas());
+            Application.Run(new FrmFormaPagamento());
         }
     }
 }

@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="Senac.ADS.PPFA.FinAntonio.Model/Senac.ADS.PPFA.FinAntonio.Model.csproj" />
+  <Project Path="Senac.ADS.PPFA.FinAntonio.WinForms/Senac.ADS.PPFA.FinAntonio.WinForms.csproj" />
+</Solution>
