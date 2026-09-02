@@ -38,9 +38,9 @@
             mnuSalvar = new ToolStripMenuItem();
             mnuExcluir = new ToolStripMenuItem();
             mnuSair = new ToolStripMenuItem();
-            advancedDataGridView1 = new Zuby.ADGV.AdvancedDataGridView();
+            dtgFormasPagamento = new Zuby.ADGV.AdvancedDataGridView();
             menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)advancedDataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dtgFormasPagamento).BeginInit();
             SuspendLayout();
             // 
             // txtId
@@ -48,6 +48,7 @@
             txtId.Font = new Font("Segoe UI", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txtId.Location = new Point(12, 73);
             txtId.Name = "txtId";
+            txtId.ReadOnly = true;
             txtId.Size = new Size(229, 38);
             txtId.TabIndex = 0;
             // 
@@ -99,47 +100,54 @@
             // mnuNovo
             // 
             mnuNovo.Name = "mnuNovo";
-            mnuNovo.Size = new Size(135, 26);
+            mnuNovo.Size = new Size(224, 26);
             mnuNovo.Text = "&Novo";
+            mnuNovo.Click += mnuNovo_Click;
             // 
             // mnuSalvar
             // 
             mnuSalvar.Name = "mnuSalvar";
-            mnuSalvar.Size = new Size(135, 26);
+            mnuSalvar.Size = new Size(224, 26);
             mnuSalvar.Text = "&Salvar";
+            mnuSalvar.Click += mnuSalvar_Click;
             // 
             // mnuExcluir
             // 
             mnuExcluir.Name = "mnuExcluir";
-            mnuExcluir.Size = new Size(135, 26);
+            mnuExcluir.Size = new Size(224, 26);
             mnuExcluir.Text = "&Excluir";
             // 
             // mnuSair
             // 
             mnuSair.Name = "mnuSair";
-            mnuSair.Size = new Size(135, 26);
+            mnuSair.Size = new Size(224, 26);
             mnuSair.Text = "Sair";
             // 
-            // advancedDataGridView1
+            // dtgFormasPagamento
             // 
-            advancedDataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            advancedDataGridView1.FilterAndSortEnabled = true;
-            advancedDataGridView1.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
-            advancedDataGridView1.Location = new Point(12, 196);
-            advancedDataGridView1.MaxFilterButtonImageHeight = 23;
-            advancedDataGridView1.Name = "advancedDataGridView1";
-            advancedDataGridView1.RightToLeft = RightToLeft.No;
-            advancedDataGridView1.RowHeadersWidth = 51;
-            advancedDataGridView1.Size = new Size(517, 201);
-            advancedDataGridView1.SortStringChangedInvokeBeforeDatasourceUpdate = true;
-            advancedDataGridView1.TabIndex = 5;
+            dtgFormasPagamento.AllowUserToAddRows = false;
+            dtgFormasPagamento.AllowUserToDeleteRows = false;
+            dtgFormasPagamento.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dtgFormasPagamento.FilterAndSortEnabled = true;
+            dtgFormasPagamento.FilterStringChangedInvokeBeforeDatasourceUpdate = true;
+            dtgFormasPagamento.Location = new Point(12, 196);
+            dtgFormasPagamento.MaxFilterButtonImageHeight = 23;
+            dtgFormasPagamento.Name = "dtgFormasPagamento";
+            dtgFormasPagamento.ReadOnly = true;
+            dtgFormasPagamento.RightToLeft = RightToLeft.No;
+            dtgFormasPagamento.RowHeadersWidth = 51;
+            dtgFormasPagamento.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dtgFormasPagamento.Size = new Size(517, 201);
+            dtgFormasPagamento.SortStringChangedInvokeBeforeDatasourceUpdate = true;
+            dtgFormasPagamento.TabIndex = 5;
+            dtgFormasPagamento.CellDoubleClick += dtgFormasPagamento_CellDoubleClick;
             // 
             // FrmFormaPagamento
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(541, 409);
-            Controls.Add(advancedDataGridView1);
+            Controls.Add(dtgFormasPagamento);
             Controls.Add(label2);
             Controls.Add(txtDescricao);
             Controls.Add(label1);
@@ -148,9 +156,10 @@
             MainMenuStrip = menuStrip1;
             Name = "FrmFormaPagamento";
             Text = "FrmFormaPagamento";
+            Load += FrmFormaPagamento_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)advancedDataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dtgFormasPagamento).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,6 +176,6 @@
         private ToolStripMenuItem mnuSalvar;
         private ToolStripMenuItem mnuExcluir;
         private ToolStripMenuItem mnuSair;
-        private Zuby.ADGV.AdvancedDataGridView advancedDataGridView1;
+        private Zuby.ADGV.AdvancedDataGridView dtgFormasPagamento;
     }
 }

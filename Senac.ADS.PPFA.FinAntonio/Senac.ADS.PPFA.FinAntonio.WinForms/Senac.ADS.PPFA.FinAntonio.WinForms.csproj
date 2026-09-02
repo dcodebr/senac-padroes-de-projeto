@@ -13,4 +13,8 @@
     <PackageReference Include="Equin.ApplicationFramework.BindingListView" Version="1.4.5222.35545" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Senac.ADS.PPFA.FinAntonio.Model\Senac.ADS.PPFA.FinAntonio.Model.csproj" />
+  </ItemGroup>
+
 </Project>
