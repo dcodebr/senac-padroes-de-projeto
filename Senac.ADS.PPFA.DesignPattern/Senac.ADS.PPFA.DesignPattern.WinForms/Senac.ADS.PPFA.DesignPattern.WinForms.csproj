@@ -14,6 +14,7 @@
     <ProjectReference Include="..\Senac.ADS.PPFA.DesignPattern.Decorator\Senac.ADS.PPFA.DesignPattern.Decorator.csproj" />
     <ProjectReference Include="..\Senac.ADS.PPFA.DesignPattern.Facade\Senac.ADS.PPFA.DesignPattern.Facade.csproj" />
     <ProjectReference Include="..\Senac.ADS.PPFA.DesignPattern.Factory\Senac.ADS.PPFA.DesignPattern.Factory.csproj" />
+    <ProjectReference Include="..\Senac.ADS.PPFA.DesignPattern.Observer\Senac.ADS.PPFA.DesignPattern.Observer.csproj" />
     <ProjectReference Include="..\Senac.ADS.PPFA.DesignPattern.Singleton\Senac.ADS.PPFA.DesignPattern.Singleton.csproj" />
   </ItemGroup>
 

@@ -4,6 +4,7 @@
   <Project Path="Senac.ADS.PPFA.DesignPattern.Decorator/Senac.ADS.PPFA.DesignPattern.Decorator.csproj" Id="008f69bf-a12e-45f5-a03f-f72b8c516338" />
   <Project Path="Senac.ADS.PPFA.DesignPattern.Facade/Senac.ADS.PPFA.DesignPattern.Facade.csproj" Id="1d77f061-7035-407d-b888-bd52ab349cb9" />
   <Project Path="Senac.ADS.PPFA.DesignPattern.Factory/Senac.ADS.PPFA.DesignPattern.Factory.csproj" Id="102294d7-53b9-4dc6-aa93-d3da9e649849" />
+  <Project Path="Senac.ADS.PPFA.DesignPattern.Observer/Senac.ADS.PPFA.DesignPattern.Observer.csproj" Id="0d354f83-6ea0-430e-98e9-b6c62b40ea9d" />
   <Project Path="Senac.ADS.PPFA.DesignPattern.Singleton/Senac.ADS.PPFA.DesignPattern.Singleton.csproj" Id="a96e5591-847f-4162-8ac7-72fb5cf1740f" />
   <Project Path="Senac.ADS.PPFA.DesignPattern.WinForms/Senac.ADS.PPFA.DesignPattern.WinForms.csproj" />
 </Solution>
