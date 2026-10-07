@@ -51,6 +51,7 @@
             btnCelsiusAdd.TabIndex = 0;
             btnCelsiusAdd.Text = "Adicionar Celsius";
             btnCelsiusAdd.UseVisualStyleBackColor = true;
+            btnCelsiusAdd.Click += btnCelsiusAdd_Click;
             // 
             // btnCelsiusRemove
             // 
@@ -78,6 +79,7 @@
             btnFahrenheitAdd.TabIndex = 2;
             btnFahrenheitAdd.Text = "Adicionar Fahrenheit";
             btnFahrenheitAdd.UseVisualStyleBackColor = true;
+            btnFahrenheitAdd.Click += btnFahrenheitAdd_Click;
             // 
             // btnKelvinRemove
             // 
@@ -96,6 +98,7 @@
             btnKelvinAdd.TabIndex = 4;
             btnKelvinAdd.Text = "Adicionar Kelvin";
             btnKelvinAdd.UseVisualStyleBackColor = true;
+            btnKelvinAdd.Click += btnKelvinAdd_Click;
             // 
             // btnAtualizar
             // 
@@ -105,6 +108,7 @@
             btnAtualizar.TabIndex = 6;
             btnAtualizar.Text = "Atualizar";
             btnAtualizar.UseVisualStyleBackColor = true;
+            btnAtualizar.Click += btnAtualizar_Click;
             // 
             // label1
             // 
@@ -114,6 +118,7 @@
             label1.Size = new Size(54, 20);
             label1.TabIndex = 7;
             label1.Text = "Celsius";
+            label1.Visible = false;
             // 
             // lblCelsius
             // 
@@ -124,6 +129,7 @@
             lblCelsius.Size = new Size(104, 62);
             lblCelsius.TabIndex = 8;
             lblCelsius.Text = "0ºC";
+            lblCelsius.Visible = false;
             // 
             // lblFahrenheit
             // 
@@ -134,6 +140,7 @@
             lblFahrenheit.Size = new Size(99, 62);
             lblFahrenheit.TabIndex = 10;
             lblFahrenheit.Text = "0ºF";
+            lblFahrenheit.Visible = false;
             // 
             // label3
             // 
@@ -143,6 +150,7 @@
             label3.Size = new Size(77, 20);
             label3.TabIndex = 9;
             label3.Text = "Fahrenheit";
+            label3.Visible = false;
             // 
             // lblKelvin
             // 
@@ -153,6 +161,7 @@
             lblKelvin.Size = new Size(98, 62);
             lblKelvin.TabIndex = 12;
             lblKelvin.Text = "0 K";
+            lblKelvin.Visible = false;
             // 
             // label5
             // 
@@ -162,6 +171,7 @@
             label5.Size = new Size(49, 20);
             label5.TabIndex = 11;
             label5.Text = "Kelvin";
+            label5.Visible = false;
             // 
             // FrmObserver
             // 
