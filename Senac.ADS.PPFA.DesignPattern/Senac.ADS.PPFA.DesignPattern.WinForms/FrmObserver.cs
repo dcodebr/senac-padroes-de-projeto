@@ -12,6 +12,9 @@ namespace Senac.ADS.PPFA.DesignPattern.WinForms
     public partial class FrmObserver : Form
     {
         private EstacaoMeteorologica estacao;
+        private CelsiusObservable celsiusObserver;
+        private FahrenheitObservable fahrenheitObservable;
+        private KelvinObservable kelvinObservable;
 
         public FrmObserver()
         {
@@ -21,19 +24,21 @@ namespace Senac.ADS.PPFA.DesignPattern.WinForms
 
         private void btnAtualizar_Click(object sender, EventArgs e)
         {
-            var random = new Random();
-            estacao.Temperatura = random.NextInt64(0, 100);
+
+            Task.Run(() => {
+                while (true) {
+                    var random = new Random();
+                    estacao.Temperatura = random.NextInt64(0, 250);
+
+                    Thread.Sleep(2000);
+                }
+            });
         }
 
         private void btnCelsiusAdd_Click(object sender, EventArgs e)
         {
             lblCelsius.Visible = true;
             label1.Visible = true;
-
-            var celsiusObserver = new CelsiusObservable(valor =>
-            {
-                lblCelsius.Text = $"{valor} ºC";
-            });
 
             estacao.Subscribe(celsiusObserver);
         }
@@ -43,11 +48,6 @@ namespace Senac.ADS.PPFA.DesignPattern.WinForms
             lblFahrenheit.Visible = true;
             label3.Visible = true;
 
-            var fahrenheitObservable = new FahrenheitObservable(valor =>
-            {
-                lblFahrenheit.Text = $"{valor} ºF";
-            });
-
             estacao.Subscribe(fahrenheitObservable);
         }
 
@@ -56,11 +56,48 @@ namespace Senac.ADS.PPFA.DesignPattern.WinForms
             lblKelvin.Visible = true;
             label5.Visible = true;
 
-            var kelvinObservable = new KelvinObservable(valor => {
-                lblKelvin.Text = $"{valor} K";
+            estacao.Subscribe(kelvinObservable);
+        }
+
+        private void FrmObserver_Load(object sender, EventArgs e)
+        {
+            celsiusObserver = new CelsiusObservable(valor =>
+            {
+                this.BeginInvoke((Action)(() => {
+                    lblCelsius.Text = $"{valor} ºC";
+                }));
             });
 
-            estacao.Subscribe(kelvinObservable);
+            fahrenheitObservable = new FahrenheitObservable(valor =>
+            {
+                this.BeginInvoke((Action)(() => {
+                    lblFahrenheit.Text = $"{valor} ºF";
+                }));
+            });
+
+            kelvinObservable = new KelvinObservable(valor =>
+            {
+                this.BeginInvoke((Action)(() => {
+                    lblKelvin.Text = $"{valor} K";
+                }));
+            });
+
+
+        }
+
+        private void btnCelsiusRemove_Click(object sender, EventArgs e)
+        {
+            estacao.Unsubscribe(celsiusObserver);
+        }
+
+        private void btnFahrenheitRemove_Click(object sender, EventArgs e)
+        {
+            estacao.Unsubscribe(fahrenheitObservable);
+        }
+
+        private void btnKelvinRemove_Click(object sender, EventArgs e)
+        {
+            estacao.Unsubscribe(kelvinObservable);
         }
     }
 }

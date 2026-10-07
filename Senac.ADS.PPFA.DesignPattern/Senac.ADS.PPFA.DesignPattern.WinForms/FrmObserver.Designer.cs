@@ -61,6 +61,7 @@
             btnCelsiusRemove.TabIndex = 1;
             btnCelsiusRemove.Text = "Remover Celsius";
             btnCelsiusRemove.UseVisualStyleBackColor = true;
+            btnCelsiusRemove.Click += btnCelsiusRemove_Click;
             // 
             // btnFahrenheitRemove
             // 
@@ -70,6 +71,7 @@
             btnFahrenheitRemove.TabIndex = 3;
             btnFahrenheitRemove.Text = "Remover Fahrenheit";
             btnFahrenheitRemove.UseVisualStyleBackColor = true;
+            btnFahrenheitRemove.Click += btnFahrenheitRemove_Click;
             // 
             // btnFahrenheitAdd
             // 
@@ -89,6 +91,7 @@
             btnKelvinRemove.TabIndex = 5;
             btnKelvinRemove.Text = "Remover Kelvin";
             btnKelvinRemove.UseVisualStyleBackColor = true;
+            btnKelvinRemove.Click += btnKelvinRemove_Click;
             // 
             // btnKelvinAdd
             // 
@@ -193,6 +196,7 @@
             Controls.Add(btnCelsiusAdd);
             Name = "FrmObserver";
             Text = "FrmObserver";
+            Load += FrmObserver_Load;
             ResumeLayout(false);
             PerformLayout();
         }
