@@ -6,5 +6,6 @@
   <Project Path="Senac.ADS.PPFA.DesignPattern.Factory/Senac.ADS.PPFA.DesignPattern.Factory.csproj" Id="102294d7-53b9-4dc6-aa93-d3da9e649849" />
   <Project Path="Senac.ADS.PPFA.DesignPattern.Observer/Senac.ADS.PPFA.DesignPattern.Observer.csproj" Id="0d354f83-6ea0-430e-98e9-b6c62b40ea9d" />
   <Project Path="Senac.ADS.PPFA.DesignPattern.Singleton/Senac.ADS.PPFA.DesignPattern.Singleton.csproj" Id="a96e5591-847f-4162-8ac7-72fb5cf1740f" />
+  <Project Path="Senac.ADS.PPFA.DesignPattern.StrategyPattern/Senac.ADS.PPFA.DesignPattern.StrategyPattern.csproj" Id="c14fcbfa-33a0-4fb3-9a37-b03a354efc7a" />
   <Project Path="Senac.ADS.PPFA.DesignPattern.WinForms/Senac.ADS.PPFA.DesignPattern.WinForms.csproj" />
 </Solution>
