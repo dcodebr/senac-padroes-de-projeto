@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Senac.ADS.PPFA.DesignPattern.StrategyPattern
 {
-    internal class PagamentoCheque : IPagamento
+    public class PagamentoCheque : IPagamento
     {
         public string Pagar(double valor)
         {

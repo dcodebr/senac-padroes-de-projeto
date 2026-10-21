@@ -82,6 +82,7 @@
             btnPagar.TabIndex = 7;
             btnPagar.Text = "Pagar";
             btnPagar.UseVisualStyleBackColor = true;
+            btnPagar.Click += btnPagar_Click;
             // 
             // pnlPix
             // 
@@ -226,9 +227,9 @@
             pnlCheque.Controls.Add(txtChequeNumero);
             pnlCheque.Controls.Add(label4);
             pnlCheque.Controls.Add(txtChequeValor);
-            pnlCheque.Location = new Point(19, 322);
+            pnlCheque.Location = new Point(19, 323);
             pnlCheque.Name = "pnlCheque";
-            pnlCheque.Size = new Size(443, 75);
+            pnlCheque.Size = new Size(443, 73);
             pnlCheque.TabIndex = 10;
             pnlCheque.Visible = false;
             // 
@@ -304,11 +305,11 @@
         private Label label6;
         private TextBox txtCartaoNumero;
         private Label label7;
-        private TextBox txtCartaoCreditoValor;
         private Panel pnlCheque;
         private Label label5;
         private TextBox txtChequeNumero;
         private Label label4;
+        private TextBox txtCartaoCreditoValor;
         private TextBox txtChequeValor;
     }
 }
