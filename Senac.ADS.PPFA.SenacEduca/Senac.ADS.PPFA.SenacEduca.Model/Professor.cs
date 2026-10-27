@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Senac.ADS.PPFA.SenacEduca.Model
 {
-    public class Professor
+    public class Professor : BaseModel
     {
         public string? Nome { get; set; }
         public string? Formacao { get; set; }

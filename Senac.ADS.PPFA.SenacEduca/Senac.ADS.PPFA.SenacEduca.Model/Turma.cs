@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Senac.ADS.PPFA.SenacEduca.Model
 {
-    public class Turma
+    public class Turma : BaseModel
     {
         public string? Descricao { get; set; }
         public string? Periodo { get; set; }

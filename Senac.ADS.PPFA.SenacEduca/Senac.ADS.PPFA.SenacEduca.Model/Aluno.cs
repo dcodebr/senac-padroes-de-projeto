@@ -1,6 +1,6 @@
 ﻿namespace Senac.ADS.PPFA.SenacEduca.Model
 {
-    public class Aluno
+    public class Aluno : BaseModel
     {
         public string? Nome { get; set; }
         public string? CPF { get; set; }

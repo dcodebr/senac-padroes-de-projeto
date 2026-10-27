@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Senac.ADS.PPFA.SenacEduca.Model
 {
-    public class Grade
+    public class Grade : BaseModel
     {
         public int? TurmaId { get; set; }
         public int? DisciplinaId { get; set; }
