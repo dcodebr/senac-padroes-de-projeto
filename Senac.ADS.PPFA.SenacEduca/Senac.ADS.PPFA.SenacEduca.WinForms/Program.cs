@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using Senac.ADS.PPFA.SenacEduca.Repositories;
 
@@ -21,13 +22,18 @@ namespace Senac.ADS.PPFA.SenacEduca.WinForms
             Application.SetCompatibleTextRenderingDefault(false);
             ApplicationConfiguration.Initialize();
 
-            var MainForm = ServiceProvider.GetRequiredService<Form1>();
+
+            var context = ServiceProvider.GetService<SenacEducaContext>();
+            context!.Database.Migrate();
+
+            var MainForm = ServiceProvider.GetRequiredService<FrmAluno>();
             Application.Run(MainForm);
         }
 
         private static void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<Form1>();
+            services.AddTransient<FrmAluno>();
+            services.AddTransient<SenacEducaContextFactory>();
             services.AddTransient(opt => opt.GetService<SenacEducaContextFactory>()!.CreateDbContext());
         }
     }
