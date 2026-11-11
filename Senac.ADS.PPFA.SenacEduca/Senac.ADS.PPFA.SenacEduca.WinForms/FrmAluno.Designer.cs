@@ -3,12 +3,12 @@
     partial class FrmAluno
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,232 +23,356 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            btnNovo = new Button();
-            btnSalvar = new Button();
-            btnExcluir = new Button();
-            btnLocalizar = new Button();
-            groupBox2 = new GroupBox();
-            label1 = new Label();
-            txtCodigo = new TextBox();
-            label2 = new Label();
-            txtNome = new TextBox();
-            label3 = new Label();
-            txtCPF = new MaskedTextBox();
-            label4 = new Label();
-            cboTurma = new ComboBox();
-            btnTurmaLista = new Button();
-            label5 = new Label();
-            txtTelefone = new MaskedTextBox();
-            groupBox1 = new GroupBox();
-            groupBox2.SuspendLayout();
-            groupBox1.SuspendLayout();
+            txtCodigo = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            txtNome = new ReaLTaiizor.Controls.MaterialTextBoxEdit();
+            txtCPF = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
+            cboTurma = new ReaLTaiizor.Controls.MaterialComboBox();
+            btnTurmaLista = new ReaLTaiizor.Controls.MaterialButton();
+            txtTelefone = new ReaLTaiizor.Controls.MaterialMaskedTextBox();
+            materialCard1 = new ReaLTaiizor.Controls.MaterialCard();
+            btnLocalizar = new ReaLTaiizor.Controls.MaterialButton();
+            btnExcluir = new ReaLTaiizor.Controls.MaterialButton();
+            btnSalvar = new ReaLTaiizor.Controls.MaterialButton();
+            btnNovo = new ReaLTaiizor.Controls.MaterialButton();
+            materialCard1.SuspendLayout();
             SuspendLayout();
-            // 
-            // btnNovo
-            // 
-            btnNovo.Location = new Point(6, 26);
-            btnNovo.Name = "btnNovo";
-            btnNovo.Size = new Size(94, 29);
-            btnNovo.TabIndex = 0;
-            btnNovo.Text = "Novo";
-            btnNovo.UseVisualStyleBackColor = true;
-            // 
-            // btnSalvar
-            // 
-            btnSalvar.Location = new Point(106, 26);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(94, 29);
-            btnSalvar.TabIndex = 1;
-            btnSalvar.Text = "Salvar";
-            btnSalvar.UseVisualStyleBackColor = true;
-            btnSalvar.Click += btnSalvar_Click;
-            // 
-            // btnExcluir
-            // 
-            btnExcluir.Location = new Point(206, 26);
-            btnExcluir.Name = "btnExcluir";
-            btnExcluir.Size = new Size(94, 29);
-            btnExcluir.TabIndex = 2;
-            btnExcluir.Text = "Excluir";
-            btnExcluir.UseVisualStyleBackColor = true;
-            // 
-            // btnLocalizar
-            // 
-            btnLocalizar.Location = new Point(320, 26);
-            btnLocalizar.Name = "btnLocalizar";
-            btnLocalizar.Size = new Size(94, 29);
-            btnLocalizar.TabIndex = 3;
-            btnLocalizar.Text = "Localizar";
-            btnLocalizar.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(btnLocalizar);
-            groupBox2.Controls.Add(btnExcluir);
-            groupBox2.Controls.Add(btnSalvar);
-            groupBox2.Controls.Add(btnNovo);
-            groupBox2.Location = new Point(12, 284);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(420, 67);
-            groupBox2.TabIndex = 1;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Ações";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(6, 33);
-            label1.Name = "label1";
-            label1.Size = new Size(58, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Código";
             // 
             // txtCodigo
             // 
-            txtCodigo.Location = new Point(6, 56);
+            txtCodigo.AnimateReadOnly = false;
+            txtCodigo.AutoCompleteMode = AutoCompleteMode.None;
+            txtCodigo.AutoCompleteSource = AutoCompleteSource.None;
+            txtCodigo.BackgroundImageLayout = ImageLayout.None;
+            txtCodigo.CharacterCasing = CharacterCasing.Normal;
+            txtCodigo.Depth = 0;
+            txtCodigo.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtCodigo.HideSelection = true;
+            txtCodigo.Hint = "Código";
+            txtCodigo.LeadingIcon = null;
+            txtCodigo.Location = new Point(6, 96);
+            txtCodigo.MaxLength = 32767;
+            txtCodigo.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtCodigo.Name = "txtCodigo";
+            txtCodigo.PasswordChar = '\0';
+            txtCodigo.PrefixSuffixText = null;
             txtCodigo.ReadOnly = true;
-            txtCodigo.Size = new Size(146, 27);
-            txtCodigo.TabIndex = 1;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(6, 93);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 2;
-            label2.Text = "Nome";
+            txtCodigo.RightToLeft = RightToLeft.No;
+            txtCodigo.SelectedText = "";
+            txtCodigo.SelectionLength = 0;
+            txtCodigo.SelectionStart = 0;
+            txtCodigo.ShortcutsEnabled = true;
+            txtCodigo.Size = new Size(231, 60);
+            txtCodigo.TabIndex = 0;
+            txtCodigo.TabStop = false;
+            txtCodigo.Text = "0";
+            txtCodigo.TextAlign = HorizontalAlignment.Left;
+            txtCodigo.TrailingIcon = null;
+            txtCodigo.UseSystemPasswordChar = false;
             // 
             // txtNome
             // 
-            txtNome.Location = new Point(6, 116);
+            txtNome.AnimateReadOnly = false;
+            txtNome.AutoCompleteMode = AutoCompleteMode.None;
+            txtNome.AutoCompleteSource = AutoCompleteSource.None;
+            txtNome.BackgroundImageLayout = ImageLayout.None;
+            txtNome.CharacterCasing = CharacterCasing.Normal;
+            txtNome.Depth = 0;
+            txtNome.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtNome.HideSelection = true;
+            txtNome.Hint = "Nome";
+            txtNome.ImeMode = ImeMode.Off;
+            txtNome.LeadingIcon = null;
+            txtNome.Location = new Point(6, 162);
+            txtNome.MaxLength = 32767;
+            txtNome.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtNome.Name = "txtNome";
-            txtNome.Size = new Size(408, 27);
-            txtNome.TabIndex = 3;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(6, 157);
-            label3.Name = "label3";
-            label3.Size = new Size(33, 20);
-            label3.TabIndex = 4;
-            label3.Text = "CPF";
+            txtNome.PasswordChar = '\0';
+            txtNome.PrefixSuffixText = null;
+            txtNome.ReadOnly = false;
+            txtNome.RightToLeft = RightToLeft.No;
+            txtNome.SelectedText = "";
+            txtNome.SelectionLength = 0;
+            txtNome.SelectionStart = 0;
+            txtNome.ShortcutsEnabled = true;
+            txtNome.Size = new Size(576, 60);
+            txtNome.TabIndex = 1;
+            txtNome.TabStop = false;
+            txtNome.TextAlign = HorizontalAlignment.Left;
+            txtNome.TrailingIcon = null;
+            txtNome.UseSystemPasswordChar = false;
             // 
             // txtCPF
             // 
-            txtCPF.Location = new Point(6, 180);
+            txtCPF.AllowPromptAsInput = true;
+            txtCPF.AnimateReadOnly = false;
+            txtCPF.AsciiOnly = false;
+            txtCPF.BackgroundImageLayout = ImageLayout.None;
+            txtCPF.BeepOnError = false;
+            txtCPF.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
+            txtCPF.Depth = 0;
+            txtCPF.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtCPF.HidePromptOnLeave = false;
+            txtCPF.HideSelection = true;
+            txtCPF.Hint = "CPF";
+            txtCPF.InsertKeyMode = InsertKeyMode.Default;
+            txtCPF.LeadingIcon = null;
+            txtCPF.Location = new Point(6, 228);
             txtCPF.Mask = "000,000,000-00";
+            txtCPF.MaxLength = 32767;
+            txtCPF.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtCPF.Name = "txtCPF";
-            txtCPF.Size = new Size(160, 27);
-            txtCPF.TabIndex = 5;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Location = new Point(172, 158);
-            label4.Name = "label4";
-            label4.Size = new Size(51, 20);
-            label4.TabIndex = 6;
-            label4.Text = "Turma";
+            txtCPF.PasswordChar = '\0';
+            txtCPF.PrefixSuffixText = null;
+            txtCPF.PromptChar = '_';
+            txtCPF.ReadOnly = false;
+            txtCPF.RejectInputOnFirstFailure = false;
+            txtCPF.ResetOnPrompt = true;
+            txtCPF.ResetOnSpace = true;
+            txtCPF.RightToLeft = RightToLeft.No;
+            txtCPF.SelectedText = "";
+            txtCPF.SelectionLength = 0;
+            txtCPF.SelectionStart = 0;
+            txtCPF.ShortcutsEnabled = true;
+            txtCPF.Size = new Size(191, 60);
+            txtCPF.SkipLiterals = true;
+            txtCPF.TabIndex = 2;
+            txtCPF.TabStop = false;
+            txtCPF.Text = "   .   .   -";
+            txtCPF.TextAlign = HorizontalAlignment.Left;
+            txtCPF.TextMaskFormat = MaskFormat.IncludeLiterals;
+            txtCPF.TrailingIcon = null;
+            txtCPF.UseSystemPasswordChar = false;
+            txtCPF.ValidatingType = null;
             // 
             // cboTurma
             // 
+            cboTurma.AutoResize = false;
+            cboTurma.BackColor = Color.FromArgb(255, 255, 255);
+            cboTurma.Depth = 0;
             cboTurma.DisplayMember = "Descricao";
+            cboTurma.DrawMode = DrawMode.OwnerDrawVariable;
+            cboTurma.DropDownHeight = 218;
             cboTurma.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboTurma.DropDownWidth = 121;
+            cboTurma.Font = new Font("Microsoft Sans Serif", 17.5F, FontStyle.Bold, GraphicsUnit.Pixel);
+            cboTurma.ForeColor = Color.FromArgb(222, 0, 0, 0);
             cboTurma.FormattingEnabled = true;
-            cboTurma.Location = new Point(172, 180);
+            cboTurma.Hint = "Turma";
+            cboTurma.IntegralHeight = false;
+            cboTurma.ItemHeight = 54;
+            cboTurma.Location = new Point(203, 228);
+            cboTurma.MaxDropDownItems = 4;
+            cboTurma.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             cboTurma.Name = "cboTurma";
-            cboTurma.Size = new Size(203, 28);
-            cboTurma.TabIndex = 7;
+            cboTurma.Size = new Size(291, 60);
+            cboTurma.StartIndex = 0;
+            cboTurma.TabIndex = 3;
             cboTurma.ValueMember = "Id";
             // 
             // btnTurmaLista
             // 
-            btnTurmaLista.Location = new Point(378, 180);
+            btnTurmaLista.AutoSize = false;
+            btnTurmaLista.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnTurmaLista.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnTurmaLista.Depth = 0;
+            btnTurmaLista.HighEmphasis = true;
+            btnTurmaLista.Icon = null;
+            btnTurmaLista.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnTurmaLista.Location = new Point(501, 228);
+            btnTurmaLista.Margin = new Padding(0);
+            btnTurmaLista.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             btnTurmaLista.Name = "btnTurmaLista";
-            btnTurmaLista.Size = new Size(39, 29);
-            btnTurmaLista.TabIndex = 8;
+            btnTurmaLista.NoAccentTextColor = Color.Empty;
+            btnTurmaLista.Size = new Size(80, 60);
+            btnTurmaLista.TabIndex = 4;
             btnTurmaLista.Text = "...";
+            btnTurmaLista.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnTurmaLista.UseAccentColor = false;
             btnTurmaLista.UseVisualStyleBackColor = true;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(6, 217);
-            label5.Name = "label5";
-            label5.Size = new Size(66, 20);
-            label5.TabIndex = 9;
-            label5.Text = "Telefone";
             // 
             // txtTelefone
             // 
-            txtTelefone.Location = new Point(6, 240);
+            txtTelefone.AllowPromptAsInput = true;
+            txtTelefone.AnimateReadOnly = false;
+            txtTelefone.AsciiOnly = false;
+            txtTelefone.BackgroundImageLayout = ImageLayout.None;
+            txtTelefone.BeepOnError = false;
+            txtTelefone.CutCopyMaskFormat = MaskFormat.IncludeLiterals;
+            txtTelefone.Depth = 0;
+            txtTelefone.Font = new Font("Microsoft Sans Serif", 20F, FontStyle.Regular, GraphicsUnit.Pixel);
+            txtTelefone.HidePromptOnLeave = false;
+            txtTelefone.HideSelection = true;
+            txtTelefone.Hint = "Telefone";
+            txtTelefone.InsertKeyMode = InsertKeyMode.Default;
+            txtTelefone.LeadingIcon = null;
+            txtTelefone.Location = new Point(6, 294);
             txtTelefone.Mask = "(00) 00000-0000";
+            txtTelefone.MaxLength = 32767;
+            txtTelefone.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.OUT;
             txtTelefone.Name = "txtTelefone";
-            txtTelefone.Size = new Size(160, 27);
-            txtTelefone.TabIndex = 10;
+            txtTelefone.PasswordChar = '\0';
+            txtTelefone.PrefixSuffixText = null;
+            txtTelefone.PromptChar = '_';
+            txtTelefone.ReadOnly = false;
+            txtTelefone.RejectInputOnFirstFailure = false;
+            txtTelefone.ResetOnPrompt = true;
+            txtTelefone.ResetOnSpace = true;
+            txtTelefone.RightToLeft = RightToLeft.No;
+            txtTelefone.SelectedText = "";
+            txtTelefone.SelectionLength = 0;
+            txtTelefone.SelectionStart = 0;
+            txtTelefone.ShortcutsEnabled = true;
+            txtTelefone.Size = new Size(191, 60);
+            txtTelefone.SkipLiterals = true;
+            txtTelefone.TabIndex = 5;
+            txtTelefone.TabStop = false;
+            txtTelefone.Text = "(  )      -";
+            txtTelefone.TextAlign = HorizontalAlignment.Left;
+            txtTelefone.TextMaskFormat = MaskFormat.IncludeLiterals;
+            txtTelefone.TrailingIcon = null;
+            txtTelefone.UseSystemPasswordChar = false;
+            txtTelefone.ValidatingType = null;
             // 
-            // groupBox1
+            // materialCard1
             // 
-            groupBox1.Controls.Add(txtTelefone);
-            groupBox1.Controls.Add(label5);
-            groupBox1.Controls.Add(btnTurmaLista);
-            groupBox1.Controls.Add(cboTurma);
-            groupBox1.Controls.Add(label4);
-            groupBox1.Controls.Add(txtCPF);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(txtNome);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(txtCodigo);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Location = new Point(12, 5);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(420, 273);
-            groupBox1.TabIndex = 0;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Dados aluno";
+            materialCard1.BackColor = Color.FromArgb(255, 255, 255);
+            materialCard1.Controls.Add(btnLocalizar);
+            materialCard1.Controls.Add(btnExcluir);
+            materialCard1.Controls.Add(btnSalvar);
+            materialCard1.Controls.Add(btnNovo);
+            materialCard1.Depth = 0;
+            materialCard1.ForeColor = Color.FromArgb(222, 0, 0, 0);
+            materialCard1.Location = new Point(6, 404);
+            materialCard1.Margin = new Padding(17);
+            materialCard1.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            materialCard1.Name = "materialCard1";
+            materialCard1.Padding = new Padding(17);
+            materialCard1.Size = new Size(575, 64);
+            materialCard1.TabIndex = 6;
+            // 
+            // btnLocalizar
+            // 
+            btnLocalizar.AutoSize = false;
+            btnLocalizar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnLocalizar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnLocalizar.Depth = 0;
+            btnLocalizar.HighEmphasis = true;
+            btnLocalizar.Icon = null;
+            btnLocalizar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnLocalizar.Location = new Point(450, 8);
+            btnLocalizar.Margin = new Padding(0);
+            btnLocalizar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnLocalizar.Name = "btnLocalizar";
+            btnLocalizar.NoAccentTextColor = Color.Empty;
+            btnLocalizar.Size = new Size(117, 50);
+            btnLocalizar.TabIndex = 12;
+            btnLocalizar.Text = "Localizar";
+            btnLocalizar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnLocalizar.UseAccentColor = false;
+            btnLocalizar.UseVisualStyleBackColor = true;
+            btnLocalizar.Click += btnLocalizar_Click;
+            // 
+            // btnExcluir
+            // 
+            btnExcluir.AutoSize = false;
+            btnExcluir.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnExcluir.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnExcluir.Depth = 0;
+            btnExcluir.HighEmphasis = true;
+            btnExcluir.Icon = null;
+            btnExcluir.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnExcluir.Location = new Point(263, 8);
+            btnExcluir.Margin = new Padding(0);
+            btnExcluir.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnExcluir.Name = "btnExcluir";
+            btnExcluir.NoAccentTextColor = Color.Empty;
+            btnExcluir.Size = new Size(117, 50);
+            btnExcluir.TabIndex = 11;
+            btnExcluir.Text = "Excluir";
+            btnExcluir.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnExcluir.UseAccentColor = false;
+            btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
+            // 
+            // btnSalvar
+            // 
+            btnSalvar.AutoSize = false;
+            btnSalvar.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnSalvar.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnSalvar.Depth = 0;
+            btnSalvar.HighEmphasis = true;
+            btnSalvar.Icon = null;
+            btnSalvar.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnSalvar.Location = new Point(136, 8);
+            btnSalvar.Margin = new Padding(0);
+            btnSalvar.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.NoAccentTextColor = Color.Empty;
+            btnSalvar.Size = new Size(117, 50);
+            btnSalvar.TabIndex = 10;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnSalvar.UseAccentColor = false;
+            btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
+            // 
+            // btnNovo
+            // 
+            btnNovo.AutoSize = false;
+            btnNovo.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            btnNovo.Density = ReaLTaiizor.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnNovo.Depth = 0;
+            btnNovo.HighEmphasis = true;
+            btnNovo.Icon = null;
+            btnNovo.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
+            btnNovo.Location = new Point(8, 8);
+            btnNovo.Margin = new Padding(0);
+            btnNovo.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
+            btnNovo.Name = "btnNovo";
+            btnNovo.NoAccentTextColor = Color.Empty;
+            btnNovo.Size = new Size(117, 50);
+            btnNovo.TabIndex = 7;
+            btnNovo.Text = "Novo";
+            btnNovo.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnNovo.UseAccentColor = false;
+            btnNovo.UseVisualStyleBackColor = true;
             // 
             // FrmAluno
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(444, 363);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            ClientSize = new Size(588, 475);
+            Controls.Add(materialCard1);
+            Controls.Add(txtTelefone);
+            Controls.Add(btnTurmaLista);
+            Controls.Add(cboTurma);
+            Controls.Add(txtCPF);
+            Controls.Add(txtNome);
+            Controls.Add(txtCodigo);
             Name = "FrmAluno";
-            Text = "Cadastro de Aluno";
-            Load += FrmAluno_Load;
-            groupBox2.ResumeLayout(false);
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            Text = "Aluno - Cadastro";
+            Load += FrmAluno1_Load;
+            materialCard1.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private Button btnNovo;
-        private Button btnSalvar;
-        private Button btnExcluir;
-        private Button btnLocalizar;
-        private GroupBox groupBox2;
-        private Label label1;
-        private TextBox txtCodigo;
-        private Label label2;
-        private TextBox txtNome;
-        private Label label3;
-        private MaskedTextBox txtCPF;
-        private Label label4;
-        private ComboBox cboTurma;
-        private Button btnTurmaLista;
-        private Label label5;
-        private MaskedTextBox txtTelefone;
-        private GroupBox groupBox1;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtCodigo;
+        private ReaLTaiizor.Controls.MaterialTextBoxEdit txtNome;
+        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtCPF;
+        private ReaLTaiizor.Controls.MaterialComboBox cboTurma;
+        private ReaLTaiizor.Controls.MaterialButton btnTurmaLista;
+        private ReaLTaiizor.Controls.MaterialMaskedTextBox txtTelefone;
+        private ReaLTaiizor.Controls.MaterialCard materialCard1;
+        private ReaLTaiizor.Controls.MaterialButton btnLocalizar;
+        private ReaLTaiizor.Controls.MaterialButton btnExcluir;
+        private ReaLTaiizor.Controls.MaterialButton btnSalvar;
+        private ReaLTaiizor.Controls.MaterialButton btnNovo;
     }
 }
