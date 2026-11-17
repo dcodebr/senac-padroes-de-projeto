@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DataGridViewCellStyle dataGridViewCellStyle4 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle5 = new DataGridViewCellStyle();
-            DataGridViewCellStyle dataGridViewCellStyle6 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
             materialCard1 = new ReaLTaiizor.Controls.MaterialCard();
             dtgAlunos = new ReaLTaiizor.Controls.PoisonDataGridView();
             colId = new DataGridViewTextBoxColumn();
@@ -38,6 +38,7 @@
             colCPF = new DataGridViewTextBoxColumn();
             colTelefone = new DataGridViewTextBoxColumn();
             colTurma = new DataGridViewTextBoxColumn();
+            colPeriodo = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dtgAlunos).BeginInit();
             SuspendLayout();
             // 
@@ -63,24 +64,24 @@
             dtgAlunos.BorderStyle = BorderStyle.None;
             dtgAlunos.CellBorderStyle = DataGridViewCellBorderStyle.None;
             dtgAlunos.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle4.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle4.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle4.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle4.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle4.WrapMode = DataGridViewTriState.True;
-            dtgAlunos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle1.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle1.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle1.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dtgAlunos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dtgAlunos.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtgAlunos.Columns.AddRange(new DataGridViewColumn[] { colId, colNome, colCPF, colTelefone, colTurma });
-            dataGridViewCellStyle5.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle5.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle5.ForeColor = Color.FromArgb(136, 136, 136);
-            dataGridViewCellStyle5.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle5.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle5.WrapMode = DataGridViewTriState.False;
-            dtgAlunos.DefaultCellStyle = dataGridViewCellStyle5;
+            dtgAlunos.Columns.AddRange(new DataGridViewColumn[] { colId, colNome, colCPF, colTelefone, colTurma, colPeriodo });
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle2.ForeColor = Color.FromArgb(136, 136, 136);
+            dataGridViewCellStyle2.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle2.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dtgAlunos.DefaultCellStyle = dataGridViewCellStyle2;
             dtgAlunos.EnableHeadersVisualStyles = false;
             dtgAlunos.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
             dtgAlunos.GridColor = Color.FromArgb(255, 255, 255);
@@ -88,14 +89,15 @@
             dtgAlunos.Name = "dtgAlunos";
             dtgAlunos.ReadOnly = true;
             dtgAlunos.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = Color.FromArgb(0, 174, 219);
-            dataGridViewCellStyle6.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
-            dataGridViewCellStyle6.ForeColor = Color.FromArgb(255, 255, 255);
-            dataGridViewCellStyle6.SelectionBackColor = Color.FromArgb(0, 198, 247);
-            dataGridViewCellStyle6.SelectionForeColor = Color.FromArgb(17, 17, 17);
-            dataGridViewCellStyle6.WrapMode = DataGridViewTriState.True;
-            dtgAlunos.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = Color.FromArgb(0, 174, 219);
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Pixel);
+            dataGridViewCellStyle3.ForeColor = Color.FromArgb(255, 255, 255);
+            dataGridViewCellStyle3.SelectionBackColor = Color.FromArgb(0, 198, 247);
+            dataGridViewCellStyle3.SelectionForeColor = Color.FromArgb(17, 17, 17);
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dtgAlunos.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dtgAlunos.RowHeadersVisible = false;
             dtgAlunos.RowHeadersWidth = 51;
             dtgAlunos.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             dtgAlunos.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
@@ -140,12 +142,21 @@
             // 
             // colTurma
             // 
-            colTurma.DataPropertyName = "Turma.Descricao";
+            colTurma.DataPropertyName = "TurmaDescricao";
             colTurma.HeaderText = "Turma";
             colTurma.MinimumWidth = 6;
             colTurma.Name = "colTurma";
             colTurma.ReadOnly = true;
             colTurma.Width = 125;
+            // 
+            // colPeriodo
+            // 
+            colPeriodo.DataPropertyName = "TurmaPeriodo";
+            colPeriodo.HeaderText = "Período";
+            colPeriodo.MinimumWidth = 6;
+            colPeriodo.Name = "colPeriodo";
+            colPeriodo.ReadOnly = true;
+            colPeriodo.Width = 125;
             // 
             // FrmAlunoLocalizar
             // 
@@ -170,5 +181,6 @@
         private DataGridViewTextBoxColumn colCPF;
         private DataGridViewTextBoxColumn colTelefone;
         private DataGridViewTextBoxColumn colTurma;
+        private DataGridViewTextBoxColumn colPeriodo;
     }
 }

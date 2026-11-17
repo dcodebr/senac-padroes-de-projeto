@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Senac.ADS.PPFA.SenacEduca.Model\Senac.ADS.PPFA.SenacEduca.Model.csproj" />
     <ProjectReference Include="..\Senac.ADS.PPFA.SenacEduca.Repositories\Senac.ADS.PPFA.SenacEduca.Repositories.csproj" />
+    <ProjectReference Include="..\Senac.ADS.PPFA.SenacEduca.ViewModel\Senac.ADS.PPFA.SenacEduca.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>
