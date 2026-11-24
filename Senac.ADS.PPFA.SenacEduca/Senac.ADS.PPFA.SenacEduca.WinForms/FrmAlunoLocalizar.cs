@@ -31,6 +31,37 @@ namespace Senac.ADS.PPFA.SenacEduca.WinForms
 
             datasource = new BindingListView<AlunoViewModel>(alunos);
             dtgAlunos.DataSource = datasource;
+
+            var turmas = Context.Turmas.ToList();
+            turmas.Add(new Model.Turma
+            {
+                Descricao = String.Empty
+            });
+
+
+            turmas = turmas.OrderBy(turmas => turmas.Descricao)
+                           .ToList();
+
+            cboTurma.DataSource = turmas;
+        }
+
+        private void btnFiltrar_Click(object sender, EventArgs e)
+        {
+            datasource.ApplyFilter(aluno => aluno.Nome!.Contains(txtNome.Text));
+
+            var cpf = txtCPF.Text;
+            cpf = cpf.Replace(".", String.Empty)
+                     .Replace("-", String.Empty);
+
+            if (!String.IsNullOrWhiteSpace(cpf))
+            {
+                datasource.ApplyFilter(aluno => aluno.CPF!.Equals(txtCPF.Text));
+            }
+
+            if (cboTurma.Text != String.Empty)
+            {
+                datasource.ApplyFilter(aluno => aluno.TurmaDescricao!.Equals(cboTurma.Text));
+            }
         }
     }
 }
