@@ -26,14 +26,16 @@ namespace Senac.ADS.PPFA.SenacEduca.WinForms
             var context = ServiceProvider.GetService<SenacEducaContext>();
             context!.Database.Migrate();
 
-            var MainForm = ServiceProvider.GetRequiredService<FrmAluno>();
+            var MainForm = ServiceProvider.GetRequiredService<FrmTurma>();
             Application.Run(MainForm);
         }
 
         private static void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<FrmAluno>();
+            services.AddTransient<FrmTurma>(); //
             services.AddTransient<FrmAlunoLocalizar>();
+            services.AddTransient<FrmTurmaLocalizar>(); //
             services.AddTransient<SenacEducaContextFactory>();
             services.AddTransient(opt => opt.GetService<SenacEducaContextFactory>()!.CreateDbContext());
         }

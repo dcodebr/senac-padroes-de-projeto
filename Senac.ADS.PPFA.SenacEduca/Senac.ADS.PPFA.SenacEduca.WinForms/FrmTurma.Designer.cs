@@ -140,6 +140,7 @@
             btnLocalizar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnLocalizar.UseAccentColor = false;
             btnLocalizar.UseVisualStyleBackColor = true;
+            btnLocalizar.Click += btnLocalizar_Click;
             // 
             // btnExcluir
             // 
@@ -150,7 +151,7 @@
             btnExcluir.HighEmphasis = true;
             btnExcluir.Icon = null;
             btnExcluir.IconType = ReaLTaiizor.Controls.MaterialButton.MaterialIconType.Rebase;
-            btnExcluir.Location = new Point(263, 8);
+            btnExcluir.Location = new Point(267, 8);
             btnExcluir.Margin = new Padding(0);
             btnExcluir.MouseState = ReaLTaiizor.Helper.MaterialDrawHelper.MaterialMouseState.HOVER;
             btnExcluir.Name = "btnExcluir";
@@ -161,6 +162,7 @@
             btnExcluir.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnExcluir.UseAccentColor = false;
             btnExcluir.UseVisualStyleBackColor = true;
+            btnExcluir.Click += btnExcluir_Click;
             // 
             // btnSalvar
             // 
@@ -182,6 +184,7 @@
             btnSalvar.Type = ReaLTaiizor.Controls.MaterialButton.MaterialButtonType.Contained;
             btnSalvar.UseAccentColor = false;
             btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnNovo
             // 

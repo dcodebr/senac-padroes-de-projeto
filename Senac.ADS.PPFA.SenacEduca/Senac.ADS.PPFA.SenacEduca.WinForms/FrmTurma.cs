@@ -15,11 +15,13 @@ namespace Senac.ADS.PPFA.SenacEduca.WinForms
     {
         Turma turma;
         SenacEducaContext Context;
+        FrmTurmaLocalizar FrmTurmaLoc;
 
-        public FrmTurma(SenacEducaContext context)
+        public FrmTurma(SenacEducaContext context, FrmTurmaLocalizar frmTurmaLoc)
         {
             InitializeComponent();
             Context = context;
+            FrmTurmaLoc = frmTurmaLoc;
         }
         private void CarregarDados()
         {
@@ -50,6 +52,7 @@ namespace Senac.ADS.PPFA.SenacEduca.WinForms
 
         private void btnLocalizar_Click(object sender, EventArgs e)
         {
+            FrmTurmaLoc.ShowDialog();
         }
     }
 }
